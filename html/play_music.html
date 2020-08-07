@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../style/play_music.css" rel="stylesheet" />
+    <title>音乐播放器</title>
+</head>
+<body>
+    <header>
+        <a href="main.html">首页</a>
+    </header>
+    <div id="video_All">
+
+        <div id="time"></div>
+        <div id="news"></div>
+        <!-- <video id="myVideo" src="" controls="controls" ></video> -->
+        <video id="myVideo" name="myVideo" controls="controls" width="800" height="600" poster="../img/poster.jpg">  </video>
+        <ul id="tui_Jian">
+            <p>看过本视频的人还看过：</p>
+            <li><img src="../img/qianfantian.jpg" /></li>
+        </ul>
+        <div id="tui_Jian1">
+            <h3>为您推荐：</h3>
+            <ul>
+                <li>
+                    <img src="../img/shen_zuo/dongjingniezhong.jpg" />
+                </li>
+                <li>
+                    <img src="../img/shen_zuo/jinjidejuren.jpg" />
+                </li>
+                <li>
+                    <img src="../img/shen_zuo/moukeuxedechaodiancipao.jpg" />
+                </li>
+                <li>
+                    <img src="../img/shen_zuo/mofadejinshumulu.jpg" />
+                </li>
+            </ul>
+        </div>
+        <div id="main_V">
+           <p>传送门：</p>
+           <a href="https://www.bilibili.com/">哔哩哔哩弹幕网</a><br />
+           <a href="http://www.buka.cn/">布卡漫画</a><br />
+           <a href="http://www.acfun.cn/">A站</a><br />
+           <a href="http://www.tucaoo.com/">吐槽网</a><br />
+           <a href="https://www.5dm.tv/">D站</a>
+        </div>
+        <!-- <source id="v1" src="video/1.mp4"> -->
+
+        <script type="text/javascript">
+//定时器显示时间
+            function set_time() {
+                var date = new Date();
+                var hour = date.getHours().toString();
+                var second = date.getSeconds().toString();
+                var minute = date.getMinutes().toString();
+                var get_Time = document.getElementById("time");
+                get_Time.innerHTML = "<p>" + " " + hour + ":" + minute + ":" + second + "</p>";
+            }
+            setInterval(set_time, 1000);
+//获取播放路径
+            function getUrlParam(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+                console.log(reg);
+                var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+                if (r != null) return unescape(r[2]); return null; //返回参数值
+            }
+            var s = getUrlParam('url');
+            var media = document.getElementById("myVideo");
+            media.src = '../audio/' + s;
+            media.load();
+//显示播放的文件名
+            function get_News() {
+
+                var get_Element_News = document.getElementById("news");
+                get_Element_News.innerHTML="<p>正在为你播放的是:"+s+"</p>";
+            }
+            get_News();
+
+
+        </script>
+    </div>
+</body>
+</html>

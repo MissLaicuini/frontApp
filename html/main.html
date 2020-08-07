@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="本网站是一个视频网站" />
+    <meta name="keywords" content="动漫天地" />
+
+    <link href="../style/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link href="../Font-Awesome-master/css/font-awesome.css" rel="stylesheet" />
+    <title>
+        动漫天地
+    </title>
+
+</head>
+<body>
+    <header>
+        <div id="img">
+            <img src="../img/logo2.jpg" />
+        </div>
+        <div id="yonghu">
+            请： <a href="load.html" class="yongHu">登陆 </a>或
+            <a href="register.html" class="yongHu">注册</a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="aside_left">                     
+                <h3>老司机带路：</h3>
+            <div class="fenqu">
+                <p class="index">《路人女主的养成方法》</p>
+
+                <img src="../img/jiatenghui.jpg" onmouseover="change_Opacity1()" onmouseout="change_Opacity2()" class="img" id="img_On"/>
+                <script>
+                var img_S = "../img/jiatenghui.jpg ../img/nvzhu0.jpg ../img/nvzhu1.jpg ../img/nvzhu2.jpg";
+                var arry = img_S.split(" ");
+                var i = 0;
+                var getElement_Img = document.getElementById("img_On");
+
+                function set_img() {
+                    getElement_Img.src = arry[i];
+                    i++;
+                    if (i == 4)
+                        i = 0;
+                }
+                setInterval("set_img()",1000);
+
+                </script>
+                <input value="123.mp3" type="hidden" id="video_Name" />
+                        
+             <i class="fa fa-download fa-1x" aria-hidden="true" id="download" onmouseover="change_3X_D()" onmouseout="change_2X_D()"></i> 
+                <i class="fa fa-play-circle fa-1x" aria-hidden="true" id="open" onclick="video_cilk()" onmouseover="change_3X_O()" onmouseout="change_2X_O()"></i>
+                <p id="xuanJi">更新到第10集</p>
+            </div>
+           
+                <p id="about_TV">春假，为了赚得购入动画 BD 而打工的阿宅 安艺伦也 在樱花飞舞的道路上遇到了某个少女，对该少女感兴趣的 伦也 更以她为模特儿制作了相关的同人游戏，一个月後，该少女成为了他的同班同学。为了制作游戏，伦也 陆续找了美术部王牌来负责插画、学年第一名的学姐来写作剧本，一行人以 Comike 为目标开始进行相关的游戏制作。</p>
+            <div class="fenqu">
+                <p class="index">《冰 菓》</p>
+                <img src="../img/qianfantian.jpg" onmouseover="change_Opacity3()" onmouseout="change_Opacity4()" class="img" id="img_On1" />
+                <script type="text/javascript">
+                    var j = 0;
+                    var string_I = "../img/qianfantian.jpg ../img/qianfantian1.jpg ../img/qianfantian2.jpg ../img/qianfantian3.jpg";
+                    var src_img = string_I.split(" ");
+                    function set_IMG() {
+                        var get_IMG = document.getElementById("img_On1");
+                        get_IMG.src = src_img[i]
+                        i++;
+                        if (i == 4)
+                            i = 0;
+                    }
+                    setInterval("set_IMG()",1500);
+                </script>
+                <i class="fa fa-download fa-1x" aria-hidden="true" id="download1" onmouseover="change_3X_D1()" onmouseout="change_2X_D1()"></i>
+                <i class="fa fa-play-circle fa-1x" aria-hidden="true" id="open1" onmouseover="change_3X_O1()" onmouseout="change_2X_O1()"></i>
+                <p id="xuanJi1">更新到第30集</p>
+            </div>
+                <p id="about_TV">以节能为座右铭的高中生折木奉太郎， 为一个小小的原因而加入了濒临废社的“古典文学部”。 古典文学部的社员，包括他在社里认识的好奇宝宝，也就是女主角千反田爱瑠，还有他从国中就认识的伊原摩耶花和福部里志。 这是他们四人以神山高中为舞台，对一桩桩事件展开推理的青春学园推理剧。 “我很好奇！”奉太郎平静的灰色高中生活，因为爱瑠的这一句话而为之一变！</p>
+         <div class="fenqu">
+             <p class="index">《路人女主的养成方法》</p>
+         
+             <img src="../img/jiatenghui.jpg" onmouseover="change_Opacity1()" onmouseout="change_Opacity2()" class="img" id="img_On"/>
+             <script>
+             var img_S = "../img/jiatenghui.jpg ../img/nvzhu0.jpg ../img/nvzhu1.jpg ../img/nvzhu2.jpg";
+             var arry = img_S.split(" ");
+             var i = 0;
+             var getElement_Img = document.getElementById("img_On");
+         
+             function set_img() {
+                 getElement_Img.src = arry[i];
+                 i++;
+                 if (i == 4)
+                     i = 0;
+             }
+             setInterval("set_img()",1000);
+         
+             </script>
+             <input value="123.mp3" type="hidden" id="video_Name" />
+                     
+          <i class="fa fa-download fa-1x" aria-hidden="true" id="download" onmouseover="change_3X_D()" onmouseout="change_2X_D()"></i> 
+             <i class="fa fa-play-circle fa-1x" aria-hidden="true" id="open" onclick="video_cilk()" onmouseover="change_3X_O()" onmouseout="change_2X_O()"></i>
+             <p id="xuanJi">更新到第10集</p>
+         </div>
+                    
+             <p id="about_TV">春假，为了赚得购入动画 BD 而打工的阿宅 安艺伦也 在樱花飞舞的道路上遇到了某个少女，对该少女感兴趣的 伦也 更以她为模特儿制作了相关的同人游戏，一个月後，该少女成为了他的同班同学。为了制作游戏，伦也 陆续找了美术部王牌来负责插画、学年第一名的学姐来写作剧本，一行人以 Comike 为目标开始进行相关的游戏制作。</p>   
+        <div class="fenqu">
+            <p class="index">《冰 菓》</p>
+            <img src="../img/qianfantian.jpg" onmouseover="change_Opacity3()" onmouseout="change_Opacity4()" class="img" id="img_On1" />
+            <script type="text/javascript">
+                var j = 0;
+                var string_I = "../img/qianfantian.jpg ../img/qianfantian1.jpg ../img/qianfantian2.jpg ../img/qianfantian3.jpg";
+                var src_img = string_I.split(" ");
+                function set_IMG() {
+                    var get_IMG = document.getElementById("img_On1");
+                    get_IMG.src = src_img[i]
+                    i++;
+                    if (i == 4)
+                        i = 0;
+                }
+                setInterval("set_IMG()",1500);
+            </script>
+            <i class="fa fa-download fa-1x" aria-hidden="true" id="download1" onmouseover="change_3X_D1()" onmouseout="change_2X_D1()"></i>
+            <i class="fa fa-play-circle fa-1x" aria-hidden="true" id="open1" onmouseover="change_3X_O1()" onmouseout="change_2X_O1()"></i>
+            <p id="xuanJi1">更新到第30集</p>
+        </div>
+            <p id="about_TV">以节能为座右铭的高中生折木奉太郎， 为一个小小的原因而加入了濒临废社的“古典文学部”。 古典文学部的社员，包括他在社里认识的好奇宝宝，也就是女主角千反田爱瑠，还有他从国中就认识的伊原摩耶花和福部里志。 这是他们四人以神山高中为舞台，对一桩桩事件展开推理的青春学园推理剧。 “我很好奇！”奉太郎平静的灰色高中生活，因为爱瑠的这一句话而为之一变！</p>
+		<div class="fenqu">
+		    <p class="index">《路人女主的养成方法》</p>
+		
+		    <img src="../img/jiatenghui.jpg" onmouseover="change_Opacity1()" onmouseout="change_Opacity2()" class="img" id="img_On"/>
+		    <script>
+		    var img_S = "../img/jiatenghui.jpg ../img/nvzhu0.jpg ../img/nvzhu1.jpg ../img/nvzhu2.jpg";
+		    var arry = img_S.split(" ");
+		    var i = 0;
+		    var getElement_Img = document.getElementById("img_On");
+		
+		    function set_img() {
+		        getElement_Img.src = arry[i];
+		        i++;
+		        if (i == 4)
+		            i = 0;
+		    }
+		    setInterval("set_img()",1000);
+		
+		    </script>
+		    <input value="123.mp3" type="hidden" id="video_Name" />
+		            
+		 <i class="fa fa-download fa-1x" aria-hidden="true" id="download" onmouseover="change_3X_D()" onmouseout="change_2X_D()"></i> 
+		    <i class="fa fa-play-circle fa-1x" aria-hidden="true" id="open" onclick="video_cilk()" onmouseover="change_3X_O()" onmouseout="change_2X_O()"></i>
+		    <p id="xuanJi">更新到第10集</p>
+		</div>
+		           
+		    <p id="about_TV">春假，为了赚得购入动画 BD 而打工的阿宅 安艺伦也 在樱花飞舞的道路上遇到了某个少女，对该少女感兴趣的 伦也 更以她为模特儿制作了相关的同人游戏，一个月後，该少女成为了他的同班同学。为了制作游戏，伦也 陆续找了美术部王牌来负责插画、学年第一名的学姐来写作剧本，一行人以 Comike 为目标开始进行相关的游戏制作。</p>   
+		</div>
+        <div id="aside_center">
+            <ul id="daohang">
+                <li class="daohang_L"><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li class="daohang_L"><a href="normal.html">日常番</a></li>
+                <li class="daohang_L"><a href="">燃番</a></li>
+                <li class="daohang_L"><a href="">神作</a></li>
+                <li class="daohang_L"><a href="">鬼畜</a></li>
+            </ul>
+            <p class="biaoshi"><img src="../img/tubiao1.jpg" /><sup>今日更新</sup></p>
+            <div id="geng_xin">
+                <ul>
+                    
+                        <li><a><img src="../img/lishanweilai.jpg" class="img" /></a></li>
+                        <li class="juji"><a>[境界的彼方 更新至第4集]</a></li>
+                    
+                </ul>
+                <ul>
+                    <li><a><img src="../img/saber1.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[Fate/Zero 更新至第9集]</a></li>                  
+                </ul>
+                <ul>                    
+                    <li><a><img src="../img/guhezhu.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[clannad 更新至第6集]</a></li>
+                </ul>
+                <ul>
+                    <li><img src="../img/xiana.jpg"class="img" /></li>
+                    <li class="juji"><a>[灼眼夏娜 更新至第21集]</a></li>          
+                </ul>
+				<ul>
+				    <li><img src="../img/xiana.jpg"class="img" /></li>
+				    <li class="juji"><a>[灼眼夏娜 更新至第21集]</a></li>          
+				</ul>
+				<ul>
+				    <li><a><img src="../img/guhezhu.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[clannad 更新至第6集]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/saber1.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[Fate/Zero 更新至第9集]</a></li>                  
+				</ul>
+				<ul>
+				    
+				        <li><a><img src="../img/lishanweilai.jpg" class="img" /></a></li>
+				        <li class="juji"><a>[境界的彼方 更新至第4集]</a></li>
+				    
+				</ul>
+				<ul>
+				    
+				        <li><a><img src="../img/lishanweilai.jpg" class="img" /></a></li>
+				        <li class="juji"><a>[境界的彼方 更新至第4集]</a></li>
+				    
+				</ul>
+				<ul>
+				    <li><a><img src="../img/saber1.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[Fate/Zero 更新至第9集]</a></li>                  
+				</ul>
+				<ul>                    
+				    <li><a><img src="../img/guhezhu.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[clannad 更新至第6集]</a></li>
+				</ul>
+				<ul>
+				    <li><img src="../img/xiana.jpg"class="img" /></li>
+				    <li class="juji"><a>[灼眼夏娜 更新至第21集]</a></li>          
+				</ul>
+            </div>
+            <p class="biaoshi"><img src="../img/tubiao3.jpg" /><sup>日常治愈</sup></p>
+            <div id="ri_chang">
+                <ul>
+                    <li><a><img src="../img/ri_chang/huomingweiwen.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[花名未闻----自备纸巾]</a></li>  
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ri_chang/mowangnaiba.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[魔王奶爸----儿子快上！]</a></li>
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ri_chang/longyuhu.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[龙与虎----我们私奔吧]</a></li>
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ri_chang/mofalaoshi.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[魔法老师----老师你几岁]</a></li>
+                </ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/mofalaoshi.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[魔法老师----老师你几岁]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/longyuhu.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[龙与虎----我们私奔吧]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/mowangnaiba.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[魔王奶爸----儿子快上！]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/huomingweiwen.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[花名未闻----自备纸巾]</a></li>  
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/huomingweiwen.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[花名未闻----自备纸巾]</a></li>  
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/mowangnaiba.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[魔王奶爸----儿子快上！]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/longyuhu.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[龙与虎----我们私奔吧]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ri_chang/mofalaoshi.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[魔法老师----老师你几岁]</a></li>
+				</ul>
+            </div>
+            <p class="biaoshi"> <img src="../img/tubiao5.jpg" /><sup>燃爆灵魂</sup></p>              
+            <div id="bao_ran">
+                <ul>
+                    <li><a><img src="../img/ran_Fan/qilongzhu.jpg" class="img" /></a></li>
+                      <li class="juji"><a>[龙珠----超]</a></li> 
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ran_Fan/haizeiwang.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[海贼王---海贼王的男人]</a></li>   
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ran_Fan/gangzhilianjinshushi.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[钢之炼金术师----身残志坚]</a></li>   
+                </ul>
+                <ul>
+                    <li><a><img src="../img/ran_Fan/yaojingdeweiba.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[妖精的尾巴----明明没有尾巴]</a></li>
+                </ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/yaojingdeweiba.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[妖精的尾巴----明明没有尾巴]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/gangzhilianjinshushi.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[钢之炼金术师----身残志坚]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/haizeiwang.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[海贼王---海贼王的男人]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/qilongzhu.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[龙珠----超]</a></li> 
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/qilongzhu.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[龙珠----超]</a></li> 
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/haizeiwang.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[海贼王---海贼王的男人]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/gangzhilianjinshushi.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[钢之炼金术师----身残志坚]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/ran_Fan/yaojingdeweiba.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[妖精的尾巴----明明没有尾巴]</a></li>
+				</ul>
+            </div>
+            <p class="biaoshi"><img src="../img/tubiao2.jpg" /><sup>经典神作</sup></p>
+            <div id="shen_zuo">
+                <ul>
+                    <li><a><img src="../img/shen_zuo/mofadejinshumulu.jpg" class="img" /></a></li>
+                      <li class="juji"><a>[魔法的禁书目录----神之右手]</a></li>  
+                </ul>
+                <ul>
+                    <li><a><img src="../img/shen_zuo/dongjingniezhong.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[东京食尸鬼----杂交产物]</a></li>   
+                </ul>
+                <ul>
+                    <li><a><img src="../img/shen_zuo/moukeuxedechaodiancipao.jpg" class="img" /></a></li>
+                    <li class="juji"><a>[某科学的超电磁炮--黑子赛高]</a></li>
+                </ul>
+                <ul>
+                    <li><a><img src="../img/shen_zuo/jinjidejuren.jpg" class="img" /></a></li>
+                      <li class="juji"><a>[进击的巨人----三爷威武]</a></li>  
+                </ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/jinjidejuren.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[进击的巨人----三爷威武]</a></li>  
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/moukeuxedechaodiancipao.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[某科学的超电磁炮--黑子赛高]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/dongjingniezhong.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[东京食尸鬼----杂交产物]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/mofadejinshumulu.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[魔法的禁书目录----神之右手]</a></li>  
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/mofadejinshumulu.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[魔法的禁书目录----神之右手]</a></li>  
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/dongjingniezhong.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[东京食尸鬼----杂交产物]</a></li>   
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/moukeuxedechaodiancipao.jpg" class="img" /></a></li>
+				    <li class="juji"><a>[某科学的超电磁炮--黑子赛高]</a></li>
+				</ul>
+				<ul>
+				    <li><a><img src="../img/shen_zuo/jinjidejuren.jpg" class="img" /></a></li>
+				      <li class="juji"><a>[进击的巨人----三爷威武]</a></li>  
+				</ul>
+            </div>  
+            <p class="biaoshi"><img src="../img/tubiao4.jpg" /><sup>洗脑鬼畜</sup></p>
+             <div id="gui_chu">
+                 <ul>
+                     <li><a><img src="../img/gui_chu/dijia.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[千本迪迦----来自凹凸曼的怨念]</a></li>
+                 </ul>
+                 <ul>
+                     <li><a><img src="../img/gui_chu/miaopasi.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[喵帕斯----真！短笛大魔王]</a></li>
+                 </ul>
+                 <ul>
+                     <li><a><img src="../img/gui_chu/jinkela.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[迪钾凹凸曼----凹凸曼也要金坷垃]</a></li>
+                 </ul>
+				 <ul>
+				     <li><a><img src="../img/gui_chu/wangsitu.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[双人舞----丞相司徒的演出]</a></li>    
+				 </ul>
+                 <ul>
+                     <li><a><img src="../img/gui_chu/wangsitu.jpg" class="img" /></a></li>
+                     <li class="juji"><a>[双人舞----丞相司徒的演出]</a></li>    
+                 </ul>
+				 <ul>
+				     <li><a><img src="../img/gui_chu/jinkela.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[迪钾凹凸曼----凹凸曼也要金坷垃]</a></li>
+				 </ul>
+				 <ul>
+				     <li><a><img src="../img/gui_chu/miaopasi.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[喵帕斯----真！短笛大魔王]</a></li>
+				 </ul>
+				 <ul>
+				     <li><a><img src="../img/gui_chu/dijia.jpg" class="img" /></a></li>
+				     <li class="juji"><a>[千本迪迦----来自凹凸曼的怨念]</a></li>
+				 </ul>
+             </div>
+			
+        </div>
+		 
+        <div id="aside_right">
+            <ul>
+                <li><a href="#img">顶部</a></li>
+                <li><a href="#daohang">菜单</a></li>
+                <li><a href="#geng_xin">更新</a></li>
+                <li><a href="#ri_chang">日常</a></li>
+                <li><a href="#bao_ran">燃番</a></li>
+                <li><a href="#shen_zuo">神作</a></li>
+                <li><a href="#gui_chu">鬼畜</a></li>
+            </ul>
+        </div>
+		
+    </div>
+    <footer >
+		<p> <img src="../img/over.jpg" />联盟娘：欢迎常来骚扰==</p>
+        <p>传送门：<a href="http://www.bilibili.com">bilibili</a>，<a href="https://www.u17.com/">有妖气</a></br><strong>作者:Laicn,QQ:1156309906学号:1156309906,班级:计算机1611</strong></p>
+    </footer> 
+</body>
+</html>

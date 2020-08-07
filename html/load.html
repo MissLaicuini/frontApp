@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+	<script type="text/javascript" src="../js/load.js"></script>
+    <link href="../style/load.css" rel="stylesheet" />
+</head>
+<body>
+    <header>欢迎来到<span>简简动漫网站</span></header>
+    <section>
+        <img src="../img/chuyin.jpg" />
+        <form>
+            <h4>简简登录窗口</h4>
+            <p>账号:<input type="text" id="userName" /></p>
+            <p>密码:<input  type="password" id="password"/></span></p>
+			<span id="enter_check" class="enter"></span>
+            <div>
+               <p>
+			   <input type="button" value="登录" id="enter" onclick="myEnter()" />
+			   <input type="button" value="注册" id="register" onclick="myRegister()" />
+			   <input type="reset" value="重置" id="reset" />
+			   </p>
+            </div>
+            <p id="home">
+				&nbsp;<a href="main.html">返回主页</a>&nbsp;&nbsp;&nbsp;
+				<a href="" onclick="myDemand()">忘记密码？</a>
+			</p>
+			
+        </form>
+			<p id="enterKey">
+				账户/密码：007/123456
+			</p>
+    </section>
+    <footer></footer>
+</body>
+</html>

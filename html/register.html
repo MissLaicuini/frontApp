@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>注册</title>
+    <script type="text/javascript" src="../js/register.js"></script>
+    <link href="../style/register.css" rel="stylesheet" />
+</head>
+<body>
+    <header>欢迎来到注册页面</header>
+  
+        <form>
+
+            <fieldset id="bi_tian">
+                <legend>必填：</legend>
+                <p class="wenzi">请输入用户名：</p>
+                <p><input type="text" name="userName" id="userName" placeholder="请输入账户名" maxlength="12" class="iner" onblur="return getBool_UserName()"  autofocus/><span id="userName_check" class="Tishi"></span></p>
+               <p class="wenzi">请输入密码:</p>
+                <p><input type="password" name="password" id="password" maxlength="15" class="iner" onblur="return getBool_Password0()" /></p>
+                <p class="wenzi">请再出输入密码:</p>
+                <p><input type="password" name="passwordA" id="passwordA" maxlength="15" class="iner" onblur="return getBool_Password()" /><span id="passWord_check" class="Tishi"></span></p>
+               <p class="wenzi">请输入邮箱：</p>
+                <p><input type="text" id="email" name="email" class="iner" onblur="return getBool_Email()" /><span id="email_check" class="Tishi"></span></p>
+                <p class="wenzi">请输入电话号码：</p>
+                <p><input type="text" maxlength="11" class="iner" id="tel" onblur="getBool_Tel()"  value=""/><span class="Tishi" id="tel_check"></span></p>
+             
+            </fieldset>     
+          <fieldset id="xuan_tian">
+               <p class="wenzi"><label>你的出生年月日:</label>  <input class="iner" type="date" name="date" /></p>
+               <p class="wenzi"><label>你最喜欢的运动：</label><input class="iner" type="text" list="interest" /></p>
+			       <datalist id="interest">
+					   <option>踢足球</option>
+					   <option>乒乓球</option>
+					   <option>游泳</option>
+					   <option>羽毛球</option>
+					   <option>跑步</option>
+					   <option>网球</option>
+					   <option>篮球</option>
+					   <option>橄榄球</option>
+					   <option>轮滑</option>
+					   <option>街舞</option>
+				   </datalist>
+               <p class="wenzi">选择你的性别：   男<input type="radio" name="sex"/>   女<input type="radio" name="sex" checked="checked" /></p>
+               <p class="wenzi">你最喜欢的视频类别：<select  name="lei_bie" multiple size="4">
+                   <option value="dongman">动漫</option>
+                   <option value="ouxiangju">偶像剧</option>
+                   <option value="kehuan">科幻</option>
+                   <option value="guichu">鬼畜</option>
+                   <option value="jishu">野生技术协会</option>
+                   </select></p>
+               <p class="wenzi">上传头像<input type="file"/></p>
+           </fieldset>
+            <div>
+               <p><input type="button" value="注册" id="register" onclick="myRegister()" /><input type="reset" value="重置" id="reset" onclick="get_Reset()" /></p>
+                <p><a href="main.html">返回主页</a></p>
+            </div>
+        </form>
+
+</body>
+</html>
